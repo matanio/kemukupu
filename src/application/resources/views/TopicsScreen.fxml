@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="840.0" styleClass="background" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.java.controllers.TopicsScreenController">
+   <children>
+      <Label layoutX="341.0" layoutY="27.0" prefHeight="64.0" prefWidth="153.0" text="Topics" textFill="#274029" AnchorPane.topAnchor="27.0">
+         <font>
+            <Font name="Raleway Bold" size="46.0" />
+         </font></Label>
+      <Label layoutX="62.0" layoutY="101.0" text="Select a topic:" AnchorPane.topAnchor="101.0">
+         <font>
+            <Font name="Raleway Medium" size="21.0" />
+         </font></Label>
+      <ScrollPane hbarPolicy="NEVER" layoutX="62.0" layoutY="138.0" prefHeight="378.0" prefWidth="710.0">
+         <content>
+            <GridPane fx:id="grid" prefHeight="100.0" prefWidth="110.0">
+               <columnConstraints>
+                  <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+            </GridPane>
+         </content></ScrollPane>
+      <Button fx:id="returnButton" layoutX="62.0" layoutY="37.0" mnemonicParsing="false" onAction="#returnHome" prefHeight="44.0" prefWidth="72.0" styleClass="large-button">
+         <font>
+            <Font name="Noto Sans CJK JP" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.2">
+               <image>
+                  <Image url="@../images/back-btn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Whakahoki | Return to main-menu">
+               <font>
+                  <Font name="Raleway Regular" size="14.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Button fx:id="startButton" alignment="TOP_LEFT" layoutX="619.0" layoutY="37.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="44.0" minWidth="153.0" mnemonicParsing="false" onAction="#startGame" prefWidth="153.0" styleClass="start-btn" text="Select a topic!" wrapText="true">
+         <font>
+            <Font name="Raleway ExtraBold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="allTopicsButton" contentDisplay="GRAPHIC_ONLY" layoutX="556.0" layoutY="38.0" mnemonicParsing="false" onAction="#startPracticeAllTopics" prefHeight="44.0" prefWidth="57.0" styleClass="start-btn" text="Start with All Topics">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/random.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Random | Practice with all topics!">
+               <font>
+                  <Font name="Raleway Regular" size="14.0" />
+               </font>
+            </Tooltip>
+         </tooltip></Button>
+   </children>
+</AnchorPane>

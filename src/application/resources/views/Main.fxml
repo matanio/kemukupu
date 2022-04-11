@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="840.0" styleClass="background" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.java.controllers.MainController">
+   <children>
+      <SVGPath fx:id="koruSvg" content="M 150 0 C 138 31 122 123 168 123 Q 226 130 226 71 Q 214 54 196 64 Q 186 40 218 32 Q 256 20 273 55 C 336 159 194 176 236 322 C 268 454 356 307 322 272 Q 318 246 297 263 Q 300 216 349 244 Q 384 280 376 331 C 365 436 276 427 264 498 C 248 566 194 534 129 594 C 209 515 88 406 30 312 C 18 279 10 228 64 224 Q 92 220 114 258 Q 125 303 90 288 Q 69 354 146 408 C 221 474 197 319 166 190 Q 108 156 140 226 C 56 138 124 137 84 18 Q 80 -1 32 0 " fill="#ffffff00" layoutX="-54.0" layoutY="-26.0">
+         <stroke>
+            <RadialGradient centerX="0.4438202247191011" centerY="0.375" radius="0.5714285714285714">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2858187258243561" green="0.44736841320991516" blue="0.2965886890888214" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </stroke></SVGPath>
+      <Label layoutX="374.0" layoutY="87.0" text="Welcome to">
+         <font>
+            <Font name="Raleway Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="107.0" prefHeight="105.0" prefWidth="334.0" text="Kēmu Kupu" textAlignment="CENTER" textFill="#5fad65">
+         <font>
+            <Font name="Raleway Bold" size="59.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="320.0" text="Please select:">
+         <font>
+            <Font name="Raleway SemiBold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="165.0" layoutY="374.0" mnemonicParsing="false" onAction="#newGame" prefHeight="75.0" prefWidth="150.0" styleClass="large-button" text="Games" textFill="WHITE">
+         <font>
+            <Font name="Raleway SemiBold" size="20.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Kēmu | Test your Maori spelling knowledge!">
+               <font>
+                  <Font name="Raleway Regular" size="14.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Button layoutX="380.0" layoutY="482.0" mnemonicParsing="false" onAction="#quit" prefHeight="34.0" prefWidth="80.0" styleClass="large-button" text="Quit" textFill="WHITE">
+         <font>
+            <Font name="Raleway SemiBold" size="20.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Whakamutu | Close the game">
+               <font>
+                  <Font name="Raleway Regular" size="14.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Button layoutX="345.0" layoutY="374.0" mnemonicParsing="false" onAction="#practice" prefHeight="75.0" prefWidth="150.0" styleClass="large-button" text="Practice" textFill="WHITE">
+         <font>
+            <Font name="Raleway SemiBold" size="20.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Parakitihi | Practice your Māori spelling!">
+               <font>
+                  <Font name="Raleway Regular" size="14.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Button layoutX="525.0" layoutY="374.0" mnemonicParsing="false" onAction="#scoreBoard" prefHeight="75.0" prefWidth="150.0" styleClass="large-button" text="Scoreboard" textFill="WHITE">
+         <font>
+            <Font name="Raleway SemiBold" size="20.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Papa tātai | See the highest scores achieved!">
+            <font>
+                  <Font name="Raleway Regular" size="14.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Button layoutX="761.0" layoutY="33.0" mnemonicParsing="false" onAction="#helpScreen" prefHeight="40.0" prefWidth="40.0" styleClass="help-button" text="?" textFill="WHITE">
+         <font>
+            <Font name="Raleway ExtraBold" size="20.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Āwhina | Help">
+               <font>
+                  <Font name="Raleway Regular" size="14.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+   </children>
+</AnchorPane>
